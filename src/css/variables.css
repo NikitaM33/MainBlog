@@ -1,0 +1,28 @@
+:root {
+    --velvet: #6B46C1;
+    --velvetHover: #9060ff;
+    --velvetAvtive: #9f76ff;
+    --lavanda: #e0d4fd;
+    --lavandaActive: #ceb9ff;
+    --black: #333;
+    --text: #718096;
+    --subGrey: #4A5568;
+    --icon: #454444;
+    --superlLghtGrey: #FBFBFB;
+    --superLghtblue: #F7FAFC;
+    --white: #fff;
+    --textHeader: #2D3748;
+
+    /* Radiuses */
+    --O5: 0.5rem;
+    --O25: 0.25rem;
+
+    /* Transitions */
+    --mainTransition: all 0.3s;
+
+    /* Borders */
+    --articleBorder: 1px solid #E2E2E2;
+
+    /* Shadows */
+    --articleShadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+}

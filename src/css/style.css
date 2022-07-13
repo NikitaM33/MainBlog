@@ -1,0 +1,136 @@
+@import './variables.css';
+@import './components/all.css';
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1024px;
+    width: calc(100vw - 100px);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.articles__long,
+.card {
+    margin: 0 0 2rem 0;
+    border: var(--articleBorder);
+    border-radius: 5px;
+    box-shadow: var(--articleShadow);
+    overflow: hidden;
+}
+
+.articles__long,
+.articles__short {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles__text {
+    flex: 1 0 60%;
+    padding: 1rem 3.4rem;
+}
+
+.articles__text p,
+.card__text p,
+.seeMore__text p {
+    display: -webkit-box;
+    font-size: 14px;
+    color: var(--text);
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card__text h3,
+.articles__text h3,
+.seeMore__text h3 {
+    color: var(--textHeader);
+}
+
+.articles__text a,
+.card__text a,
+.seeMore__text a {
+    font-weight: 700;
+    color: var(--black);
+    text-decoration: none;
+    transition: var(--mainTransition);
+}
+
+.articles__text a:hover,
+.card__text a:hover,
+.seeMore__text a:hover {
+    color: var(--velvet);
+}
+
+.articles__text a:active,
+.card__text a:active,
+.seeMore__text a:active {
+    color: var(--velvetHover);
+}
+
+.articles__bottom,
+.card__bottom,
+.seeMore__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.articles__bottom,
+.card__bottom,
+.seeMore__bottom,
+.articles__bottom p,
+.card__bottom p,
+.seeMore__bottom p {
+    font-size: 12px;
+}
+
+.articles__image,
+.articles__image,
+.seeMore__image {
+    overflow: hidden;
+}
+
+.articles__image img,
+.card__image img,
+.seeMore__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media screen and (max-width: 850px) {
+    .wrapper {
+        width: calc(85vw - 100px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .articles__short {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .articles__text {
+        padding: 1rem 1.5rem;
+    }
+}

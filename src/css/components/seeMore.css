@@ -1,0 +1,66 @@
+.seeMore {
+    padding-bottom: 2rem;
+}
+
+.seeMore__container {
+    background: var(--superLghtblue);
+}
+
+.seeMore__long {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.seeMore__text {
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 3.4rem;
+}
+
+.seeMore__image {
+    flex: 1 0 50%;
+}
+
+.seeMore__button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.seeMore__button button {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.6rem;
+    background: var(--velvet);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: var(--mainTransition);
+}
+
+.seeMore__button button:hover {
+    background: var(--velvetHover);
+}
+
+.seeMore__button button:active {
+    background: var(--velvetAvtive);
+}
+
+.seeMore__button svg {
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 782px) {
+    .seeMore__text {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .seeMore__long {
+        flex-direction: column;
+    }
+}

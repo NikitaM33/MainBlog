@@ -1,0 +1,24 @@
+.articles {
+    padding: 2rem 0 0 0;
+}
+
+.articles__image {
+    flex: 1 0 40%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 31.5%;
+}
+
+.card__text {
+    padding: 0.5rem 1rem 0.5rem 1.6rem;
+}
+
+@media screen and (max-width: 768px) {
+    .articles__long {
+        flex-direction: column-reverse;
+    }
+}
+

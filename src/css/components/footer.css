@@ -1,0 +1,35 @@
+.footer {
+    border-top: var(--articleBorder);
+}
+
+.footer__container,
+.footer__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.footer__social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2.1rem;
+    padding: 0.15rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.footer__social a:last-child {
+    margin: 0;
+}
+
+.footer__social a:hover {
+    background: var(--lavanda);
+}
+
+@media screen and (max-width: 720px) {
+    .footer__container {
+        flex-direction: column;
+    }
+}
